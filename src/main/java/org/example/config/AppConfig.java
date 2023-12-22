@@ -22,7 +22,7 @@ public class AppConfig {
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/crud_mvc_hiber");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/crud_mvc_hiber?useUnicode=true&characterEncoding=utf8");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;

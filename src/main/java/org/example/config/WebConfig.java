@@ -16,6 +16,9 @@ public class WebConfig {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/pages/");
         viewResolver.setSuffix(".jsp");
+        viewResolver.setContentType("text/html;charset=UTF-8");
         return viewResolver;
     }
+
+
 }
