@@ -16,7 +16,7 @@ public class UserServiceImp {
     public UserServiceImp(UserService userService) {
         this.userService = userService;
     }
-    @Transactional
+
     public List<User> findAll() {
         return (List<User>) userService.findAll();
     }
@@ -32,7 +32,7 @@ public class UserServiceImp {
     public void updateUser(User user) {
         userService.save(user);
     }
-    @Transactional
+
     public User findById(Long id) {
         return userService.findById(id).orElse(null);
     }
